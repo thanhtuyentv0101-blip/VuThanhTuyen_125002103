@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLB Bóng Đá Sinh Viên LHU</title>
+    <link rel="icon" type="image/png" href="images.jpg/logo head.jpg">
+    <link rel="stylesheet" href="style-ktr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+
+    <!-- 1. Header + Menu -->
+    <header>
+        <div class="animate__animated animate__bounce header-brand">
+            <!-- Logo LHU ở Header -->
+            <img class="animate__animated animate__bounce logo-img" src="images.jpg/Logo_yellow.png" alt="logo" /> 
+            <h2>CLB BÓNG ĐÁ LHU</h2>
+        </div>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Giới thiệu</a>
+            <a href="#hoat-dong">Hoạt động</a>
+            <a href="#">Thành viên</a>
+            <a href="#form-dk">Liên hệ</a>
+        </nav>
+        <button onclick="document.body.classList.toggle('dark')">Dark/Light</button>
+    </header>
+
+    <!-- 2. Banner -->
+    <section class="banner">
+        <div class="animate__animated animate__bounce banner-img-container">
+        <h1>CLB BÓNG ĐÁ SINH VIÊN LHU</h1>
+        <p><i>"Sút Đam Mê - Bùng Sức Trẻ"</i></p>
+        <a href="#form-dk" class="btn">Tham gia ngay</a>
+    </section>
+
+    <!-- 3. Danh sách 6 hoạt động -->
+    <section id="hoat-dong" class="animate__animated animate__bounce activities">
+        <h2>HOẠT ĐỘNG CỦA CÂU LẠC BỘ</h2>
+        <div class="grid">
+            <div class="product animate__animated animate__heartBeat card">
+                <img src="images.jpg/thaco.jpg" alt="Giải đấu Thaco">
+                <h3>1. Giải Bóng Đá Thanh Niên Sinh Viên Thaco 2026</h3>
+                <small>14/01/2026</small>
+                <p>Giải đấu tranh cúp vô địch cấp trường và toàn quốc.</p>
+            </div>
+            <div class="product animate__animated animate__heartBeat card">
+                <img src="images.jpg/IT CUPjpg.jpg" alt="IT Cup">
+                <h3>2. Hội Thao Khoa Công Nghệ Thông Tin</h3>
+                <small>20/4/2026</small>
+                <p>Giải đấu nội bộ dành cho sinh viên IT cọ xát kinh nghiệm.</p>
+            </div>
+            <div class="product animate__animated animate__heartBeat card">
+                <img src="images.jpg/HTH1.jpg" alt="Hội thao LHU">
+                <h3>3. Hội Thao Sinh Viên LHU</h3>
+                <small>05/6/2026</small>
+                <p>Ngày hội thể thao cấp trường tuyển chọn nhân tố mới.</p>
+            </div>
+            <div class="product animate__animated animate__heartBeat card">
+                <img src="images.jpg/GIẢI NUC.JPG" alt="Giải NUC">
+                <h3>4. Hội Thao Sinh Viên Toàn Quốc NUC 2026</h3>
+                <small>18/9/2026</small>
+                <p>Sân chơi quy mô lớn dành cho các đại diện xuất sắc LHU.</p>
+            </div>
+            <div class="product animate__animated animate__heartBeat card">
+                <img src="images.jpg/HARD.JPG" alt="Giải NUC">
+                <h3>5. Tập Luyện Trước Mỗi Trận Đấu</h3>
+                <small>18/9/2026</small>
+                <p> Vào thứ 3,5,7 hằng tuần.</p>
+            </div>
+                <div class="product animate__animated animate__heartBeat card">
+                <img src="images.jpg/COACH.JPG" alt="HLV">
+                <h3>6. Ban Huấn Luyện CLB</h3>
+                <small>25/9/2026</small>
+                <p>Tạo ra lối chơi cho đội bóng</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Form đăng ký thành viên -->
+    <section id="form-dk" class="form-sec">
+        <h2>ĐĂNG KÝ THÀNH VIÊN</h2>
+        <form>
+            <label for="hoten">Họ và tên:</label>
+            <input type="text" id="hoten" placeholder="Nhập họ và tên..." required>
+
+            <label for="ngaysinh">Ngày sinh:</label>
+            <input type="date" id="ngaysinh" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="example@gmail.com" required>
+
+            <label for="sdt">Điện thoại:</label>
+            <input type="tel" id="sdt" placeholder="0912345678" required>
+
+            <label>Giới tính:</label>
+            <div class="row">
+                <label><input type="radio" name="gt" checked> Nam</label>
+                <label><input type="radio" name="gt"> Nữ</label>
+                <label><input type="radio" name="gt"> Khác</label>
+            </div>
+
+            <label for="khoa">Khoa đang học:</label>
+            <select id="khoa" required>
+                <option value="">-- Chọn Khoa --</option>
+                <option value="CNTT">Khoa Công nghệ thông tin</option>
+                <option value="QTKD">Khoa Quản trị kinh doanh</option>
+                <option value="NN">Khoa Đông Phương</option>
+                <option value="KT">Khoa Cơ Điện - Điện Tử</option>
+                <option value="KT">Khoa Công Nghệ Thực Phẩm</option>
+                <option value="KT">Khoa Kỹ Thuật Xây Dựng</option>
+            </select>
+
+            <label>Lĩnh vực quan tâm (Vị trí thi đấu):</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="vitri" value="TD"> Tiền đạo (FW)</label>
+                <label><input type="checkbox" name="vitri" value="TV"> Tiền vệ (MF)</label>
+                <label><input type="checkbox" name="vitri" value="HV"> Hậu vệ (DF)</label>
+                <label><input type="checkbox" name="vitri" value="TM"> Thủ môn (GK)</label>
+            </div>
+
+            <label for="lydo">Lý do muốn tham gia:</label>
+            <textarea id="lydo" rows="3" placeholder="Viết lý do tham gia CLB..."></textarea>
+
+            <div class="btn-group">
+                <button type="submit" class="btn-submit">Đăng ký</button>
+                <button type="reset" class="btn-reset">Nhập lại</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- 5. Footer -->
+    <footer>
+        <p><b>Địa chỉ:</b> Sân Giáo Dục Thể Chất - LHU</p>
+        <p><b>Email:</b> clbbongdaLHU@gmail.com | <b>Mạng xã hội:</b> Facebook, TikTok</p>
+        <p>&copy; 2026 CLB Bóng Đá Sinh Viên LHU. Bản quyền thuộc về CLB.</p>
+    </footer>
+
+</body>
+</html>
